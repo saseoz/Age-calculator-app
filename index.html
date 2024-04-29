@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+ 
+  <main class="container transition">
+    <form class="form-container">
+      <div class="input-flex">
+        <div class="input-wrap">
+          <label for="input" class="transition">Day</label>
+          <input type="number" id="day" placeholder="DD">
+          <p class="error-msg transition"></p>
+        </div>
+        <div class="input-wrap">
+          <label for="input" class="transition">Month</label>
+          <input type="number" id="month" placeholder="MM">
+          <p class="error-msg transition"></p>
+        </div>
+        <div class="input-wrap">
+          <label for="input" class="transition">Year</label>
+          <input type="number" min="1000" id="year" placeholder="YYYY">
+          <p class="error-msg transition"></p>
+        </div>
+      </div>
+      <div class="btn-container">
+        <hr class="transition">
+        <div class="btn-wrap">
+          <button type="button" class="transition">
+            <img class="transition" src="assets/images/icon-arrow.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <div class="result-container">
+      <h1 class=""><span id="year-result">- -</span> years</h1>
+      <h1 class="transition"><span id="month-result">- -</span> months</h1>
+      <h1 class="transition"><span id="day-result">- -</span> days</h1>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
